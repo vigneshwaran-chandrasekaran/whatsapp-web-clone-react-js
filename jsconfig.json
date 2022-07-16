@@ -1,0 +1,9 @@
+{
+	"compilerOptions": {
+		"baseUrl": "src"
+	},
+	"include": ["src"],
+	"strict": true,
+	"forceConsistentCasingInFileNames": true,
+	"allowSyntheticDefaultImports": true
+}
