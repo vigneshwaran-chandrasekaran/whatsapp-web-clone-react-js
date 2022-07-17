@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import bgIcons from 'assets/images/bg-icons.png';
 
 const Container = styled.div`
 	width: 85%;
@@ -11,12 +10,8 @@ const Container = styled.div`
 `;
 
 const RightContainer = styled.div`
-	/* display: none; */
 	width: 70%;
 	position: relative;
-	background-image: url(${bgIcons});
-	background-color: ${(props) => props.theme.colors.Alabaster};
-	/* opacity: 0.5; */
 `;
 
 const Top = styled.div`
@@ -29,6 +24,7 @@ const Top = styled.div`
 	height: 62px;
 	width: 100%;
 	background-color: ${(props) => props.theme.colors.Cultured};
+	z-index: 1;
 `;
 
 const SectionTitle = styled.div`

@@ -2,6 +2,7 @@
 import styled from 'styled-components';
 import randomColor from 'randomcolor';
 import { Flex } from 'components/atoms';
+import bgIcons from 'assets/images/bg-icons.png';
 
 const messages = [
 	{
@@ -98,8 +99,19 @@ export default function Feeds() {
 const Container = styled.div`
 	display: flex;
 	flex-direction: column;
-	padding: 0 10%;
-	margin-top: 65px;
+	padding: 65px 10% 0;
+	background-color: ${(props) => props.theme.colors.Alabaster};
+
+	&::after {
+		content: '';
+		background-image: url(${bgIcons});
+		opacity: 0.4;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		position: absolute;
+	}
 `;
 
 const Basic = styled.div`
