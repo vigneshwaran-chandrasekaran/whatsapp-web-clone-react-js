@@ -8,7 +8,7 @@ import searchIcon from 'assets/svg/search-icon-big.svg';
 import menu from 'assets/svg/menu.svg';
 import groupIcon from 'assets/images/11-group.jpg';
 // import { Info, LeftContainer } from 'components/routes/home';
-import { LeftContainer } from 'components/routes/home';
+import { LeftContainer, Feeds } from 'components/routes/home';
 
 const title = '✨💥 🌟 11 Stars 🌟 ✨💥';
 const users = 'Ajay, Arnold, Arnold, Clinton, Croni, Gnana, Kiruba, Mani, Suli, Thamu, You';
@@ -34,6 +34,7 @@ export default function Home() {
 						<Image p=".5rem" width={26} height={26} src={menu} />
 					</Flex>
 				</S.Top>
+				<Feeds />
 				<S.Bottom>
 					<Image p=".5rem" width={26} height={26} src={smile} />
 					<Image p=".5rem" width={24} height={24} src={pin} />
