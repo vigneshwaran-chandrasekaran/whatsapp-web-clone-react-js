@@ -18,6 +18,8 @@ export const theme = {
 		LightGray: '#d1d7db',
 		Malachite: '#25d366',
 		Platinum: '#e6e6e6',
+		CyanProcess: '#53bdeb',
+		Gunmetal: '#202c33',
 	},
 	fontSize: {
 		xl: '2.4rem',
