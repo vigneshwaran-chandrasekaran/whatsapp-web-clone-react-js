@@ -5,7 +5,7 @@ import newChat from 'assets/svg/new-chat.svg';
 import menu from 'assets/svg/menu.svg';
 import { contacts } from 'helpers/static-data';
 import { vigneshwaran } from 'helpers/images';
-import { GetNotified } from 'components/routes/home';
+import { GetNotified, LeftSearch } from 'components/routes/home';
 
 export default function LeftContainer() {
 	return (
@@ -21,6 +21,7 @@ export default function LeftContainer() {
 				</Flex>
 			</Top>
 			<GetNotified />
+			<LeftSearch />
 			<ContactList>
 				{contacts?.map((item) => (
 					<Contact key={item?.id}>
