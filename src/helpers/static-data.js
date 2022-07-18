@@ -67,18 +67,6 @@ const contacts = [
 		profilePic: pic.housing,
 	},
 	{
-		id: 11,
-		contactName: 'ICICI Direct',
-		lastMessage: `Dear Customer,
-
-        This is with reference to your ICICIdirect account ending with XXXXXX1234.
-        Power your investments with our newly released One Click Equity Portfolio - Metals curated by award-winning Research.
-        Click here to know more : https://idirect.site/542r
-        Click here to read report : https://idirect.site/lmgd
-        If you do not wish to receive these updates at any point of time, please reply with STOP`,
-		profilePic: pic.iciciDirect,
-	},
-	{
 		id: 12,
 		contactName: 'Indian Bank',
 		lastMessage: `This business is now working with other companies to manage this chat. Click to learn more.`,
@@ -156,6 +144,91 @@ const contacts = [
 		lastMessage: 'Good Morning',
 		profilePic: pic.vigneshwaran,
 	},
+	{
+		id: 25,
+		contactName: 'ICICI Direct',
+		lastMessage: `Dear Customer,
+
+        This is with reference to your ICICIdirect account ending with XXXXXX1234.
+        Power your investments with our newly released One Click Equity Portfolio - Metals curated by award-winning Research.
+        Click here to know more : https://idirect.site/542r
+        Click here to read report : https://idirect.site/lmgd
+        If you do not wish to receive these updates at any point of time, please reply with STOP`,
+		profilePic: pic.iciciDirect,
+	},
 ];
 
-export { contacts };
+const messages = [
+	{
+		id: 1,
+		number: '+91 78969 11111',
+		name: 'James',
+		message: 'Congrats everyone 🔥🔥',
+		time: '9:34 PM',
+	},
+	{
+		id: 2,
+		number: '+91 78969 11111',
+		name: 'James',
+		message: 'Tq so much Everyone for your lovable wishes ♥️😍',
+		time: '9:34 PM',
+	},
+	{
+		id: 3,
+		number: '+91 78969 11111',
+		name: 'James',
+		message: 'Happy Birthday 🎉 sir',
+		time: '9:34 PM',
+	},
+	{
+		id: 4,
+		number: '+91 78969 11111',
+		name: 'James',
+		message: 'Absolutely true 🙏',
+		time: '9:34 PM',
+	},
+	{
+		id: 5,
+		number: '+91 78969 11111',
+		name: 'James',
+		message: 'Thank you everyone for your lovely wishes 🙂🙏',
+		time: '9:34 PM',
+	},
+	{
+		id: 6,
+		number: '+91 78969 11111',
+		name: 'James',
+		message: 'Happy happy birthday 🎂🎉 kumar ji',
+		time: '9:34 PM',
+	},
+	{
+		id: 7,
+		number: '+91 78969 11111',
+		name: 'James',
+		message: '🥰',
+		time: '9:34 PM',
+	},
+	{
+		id: 8,
+		number: '+91 78969 11111',
+		name: 'James',
+		message: 'Congrats everyone 🔥🔥',
+		time: '9:34 PM',
+	},
+	{
+		id: 9,
+		number: '+91 78969 11111',
+		name: 'James',
+		message: 'Congrats everyone 🔥🔥',
+		time: '9:34 PM',
+	},
+	{
+		id: 10,
+		number: '+91 78969 11111',
+		name: 'James',
+		message: '🥰',
+		time: '9:34 PM',
+	},
+];
+
+export { contacts, messages };
