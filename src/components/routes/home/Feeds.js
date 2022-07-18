@@ -1,4 +1,4 @@
-/* eslint-disable sonarjs/no-duplicate-string */
+/* eslint-disable sonarjs/no-identical-functions */
 import styled from 'styled-components';
 import randomColor from 'randomcolor';
 import { Flex } from 'components/atoms';
@@ -20,6 +20,30 @@ export default function Feeds() {
 					</Flex>
 				</Basic>
 			))}
+			{messages?.map((item) => (
+				<Basic key={item?.id}>
+					<Flex>
+						<Number color={randomColor({ luminosity: 'dark' })}>{item?.number}</Number>
+						<Name>~{item?.name}</Name>
+					</Flex>
+					<Flex>
+						<Message>{item?.message}</Message>
+						<Time>{item?.time}</Time>
+					</Flex>
+				</Basic>
+			))}
+			{messages?.map((item) => (
+				<Basic key={item?.id}>
+					<Flex>
+						<Number color={randomColor({ luminosity: 'dark' })}>{item?.number}</Number>
+						<Name>~{item?.name}</Name>
+					</Flex>
+					<Flex>
+						<Message>{item?.message}</Message>
+						<Time>{item?.time}</Time>
+					</Flex>
+				</Basic>
+			))}
 		</Container>
 	);
 }
@@ -27,8 +51,12 @@ export default function Feeds() {
 const Container = styled.div`
 	display: flex;
 	flex-direction: column;
-	padding: 65px 10% 0;
+	padding: 0 10%;
 	background-color: ${(props) => props.theme.colors.Alabaster};
+	max-height: 82vh;
+	height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
 
 	&::after {
 		content: '';

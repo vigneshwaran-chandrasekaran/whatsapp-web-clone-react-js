@@ -12,6 +12,9 @@ const Container = styled.div`
 const RightContainer = styled.div`
 	width: 70%;
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
 `;
 
 const Top = styled.div`
