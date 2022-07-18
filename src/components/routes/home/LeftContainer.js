@@ -5,7 +5,7 @@ import newChat from 'assets/svg/new-chat.svg';
 import menu from 'assets/svg/menu.svg';
 import { contacts } from 'helpers/static-data';
 import { vigneshwaran } from 'helpers/images';
-import { GetNotified, LeftSearch } from 'components/routes/home';
+import { GetNotified, LeftSearch, Archived } from 'components/routes/home';
 
 export default function LeftContainer() {
 	return (
@@ -23,6 +23,7 @@ export default function LeftContainer() {
 			<GetNotified />
 			<LeftSearch />
 			<ContactList>
+				<Archived />
 				{contacts?.map((item) => (
 					<Contact key={item?.id}>
 						<Image circle width={49} height={49} src={item?.profilePic} />
@@ -48,7 +49,7 @@ const Top = styled.div`
 `;
 
 const ContactList = styled.div`
-	max-height: 85vh;
+	max-height: 73vh;
 	background-color: ${(props) => props.theme.colors.white};
 	overflow: auto;
 `;
