@@ -58,9 +58,18 @@ const Container = styled.div`
 	overflow-y: auto;
 	overflow-x: hidden;
 
+	&::-webkit-scrollbar {
+		width: 5px;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		border: 5px solid #ccc;
+	}
+
 	&::after {
 		content: '';
 		background-image: url(${bgIcons});
+		width: 98%;
 		opacity: 0.4;
 		top: 0;
 		left: 0;

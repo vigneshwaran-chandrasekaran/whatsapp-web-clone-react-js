@@ -52,6 +52,14 @@ const ContactList = styled.div`
 	max-height: 73vh;
 	background-color: ${(props) => props.theme.colors.white};
 	overflow: auto;
+
+	&::-webkit-scrollbar {
+		width: 5px;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		border: 5px solid #ccc;
+	}
 `;
 
 const Contact = styled.div`
