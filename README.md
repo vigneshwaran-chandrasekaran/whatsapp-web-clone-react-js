@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+Whatsapp web Clone is a React web application that clones the whatsapp web, which is created for one-to-one messaging using ReactJs, Styled Component and Styled system.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
