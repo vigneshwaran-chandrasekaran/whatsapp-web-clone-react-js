@@ -7,6 +7,7 @@ const contacts = [
 		contactName: 'Vigneshwaran',
 		lastMessage: 'Good Morning',
 		profilePic: pic.vigneshwaran,
+		time: '10:20 AM',
 	},
 	{
 		id: 2,
@@ -14,18 +15,21 @@ const contacts = [
 		lastMessage:
 			'This official business account changed its name to "Goibibo". Click for more info.',
 		profilePic: pic.goibbo,
+		time: '10:20 AM',
 	},
 	{
 		id: 3,
 		contactName: '✨💥 🌟 11 Stars 🌟 ✨💥',
 		lastMessage: 'Good Morning',
 		profilePic: pic.elevenStars,
+		time: '10:20 AM',
 	},
 	{
 		id: 4,
 		contactName: 'BookMyShow',
 		lastMessage: "Here's your ticket. Just show this QR Code at the cinema entrance.",
 		profilePic: pic.bookMyShow,
+		time: '10:20 AM',
 	},
 	{
 		id: 5,
@@ -33,6 +37,7 @@ const contacts = [
 		lastMessage:
 			'All of them recently chose you on CRED while playing the CRED bounty to win rewards like Bitcoin, all expense paid vacations and assured cash-back.',
 		profilePic: pic.CRED,
+		time: '10:20 AM',
 	},
 	{
 		id: 6,

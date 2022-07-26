@@ -28,7 +28,10 @@ export default function LeftContainer() {
 					<Contact key={item?.id}>
 						<Image circle width={49} height={49} src={item?.profilePic} />
 						<Info>
-							<ContactName>{item?.contactName}</ContactName>
+							<Flex justifyContent="space-between">
+								<ContactName>{item?.contactName}</ContactName>
+								<Time>{item?.time || 'yesterday'}</Time>
+							</Flex>
 							<LastMessage title={item?.lastMessage}>{item?.lastMessage}</LastMessage>
 						</Info>
 					</Contact>
@@ -86,6 +89,11 @@ const ContactName = styled.div`
 	font-size: 17px;
 	color: ${(props) => props.theme.colors.RichBlack};
 	padding-bottom: 5px;
+`;
+
+const Time = styled.div`
+	font-size: 12px;
+	color: ${(props) => props.theme.colors.SlateGray};
 `;
 
 const LastMessage = styled.div`
