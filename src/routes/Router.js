@@ -17,7 +17,7 @@ export default function Router() {
 					<Route path="/">
 						<Route index element={<Pages.Home />} />
 					</Route>
-					<Route path="*" element={<p>No Match</p>} />
+					<Route path="*" element={<Pages.Home />} />
 				</Routes>
 			</Container>
 		</BrowserRouter>
