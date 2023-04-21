@@ -1,6 +1,7 @@
 {
   "name": "whatsapp-web-clone-react-js",
   "version": "0.1.0",
+  "homepage": "https://gitname.github.io/whatsapp-web-clone-react-js",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -27,7 +28,9 @@
     "eslint-fix": "eslint --fix . --ext .js, .",
     "eslint": "eslint src/**/*.{js,jsx}",
     "lint": "prettier --check .",
-    "format": "prettier --write \"./**/*.{js,jsx,css,scss,html}\""
+    "format": "prettier --write \"./**/*.{js,jsx,css,scss,html}\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -62,6 +65,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-sonarjs": "^0.13.0",
     "fs": "^0.0.1-security",
+    "gh-pages": "^5.0.0",
     "husky": "^8.0.0",
     "lint-staged": "^13.0.3",
     "path": "^0.12.7",
